@@ -17,7 +17,7 @@ def capitalize_words_plus(title):
         for word in title.split('+')
     ])
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return render_template('index.html')
 
