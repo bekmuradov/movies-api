@@ -99,4 +99,5 @@ def api_movie_genre(genre):
     return jsonify(movie)
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
