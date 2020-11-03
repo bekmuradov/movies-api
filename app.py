@@ -1,5 +1,5 @@
 import flask
-from flask import request, jsonify, render_template
+from flask import request, jsonify, render_template, redirect, url_for
 import csv
 
 app = flask.Flask(__name__)
@@ -17,7 +17,7 @@ def capitalize_words_plus(title):
         for word in title.split('+')
     ])
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return render_template('index.html')
 
@@ -50,7 +50,7 @@ def api_movie_search():
         genre = ""
 
     if keywords == "" and year == "" and genre == "":
-        pass
+        return redirect(url_for('home'))
     with open("tmdb_5000_movies.csv", "r") as file:
         reader = csv.DictReader(file)
 
@@ -99,4 +99,5 @@ def api_movie_genre(genre):
     return jsonify(movie)
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()

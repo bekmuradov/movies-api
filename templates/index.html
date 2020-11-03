@@ -19,27 +19,27 @@
           <li>
             <p>
               Base URL <br /><span class="endpoints"
-                >/api/v1/resources/movies/</span
+                >https://retrivedataset.herokuapp.com</span
               >
             </p>
           </li>
           <li>
             <p>
               Fetch all movies <br />
-              <span class="endpoints">/api/v1/resources/movies/all</span>
+              <span class="endpoints">https://retrivedataset.herokuapp.com/api/v1/resources/movies/all</span>
             </p>
           </li>
           <li>
             <p>
               Fetch movies by title <br />
               <span class="endpoints"
-                >/api/v1/resources/movies/title/&lt;title&gt;</span
+                >https://retrivedataset.herokuapp.com/api/v1/resources/movies/title/&lt;title&gt;</span
               >
             </p>
             <div class="request">
               <p>Example</p>
               <div class="example">
-                /api/v1/resources/movies/title/<span class="keyword">men+in+black+3</span>
+                https://retrivedataset.herokuapp.com/api/v1/resources/movies/title/<span class="keyword">men+in+black+3</span>
               </div>
               <p>Output:</p>
               <pre class="example code">
@@ -71,7 +71,7 @@
                 </pre
               >
               <p>If you type one word only the results will be numerous</p>
-              <div class="example">/api/v1/resources/movies/title/<span class="keyword">men</span></div>
+              <div class="example">https://retrivedataset.herokuapp.com/api/v1/resources/movies/title/<span class="keyword">men</span></div>
               <p>Output:</p>
               <pre class="example code">
 [
@@ -194,12 +194,12 @@
             <p>
               Fetch movies by keywords <br />
               <span class="endpoints"
-                >/api/v1/resources/movies/keyword/&lt;keyword&gt;</span
+                >https://retrivedataset.herokuapp.com/api/v1/resources/movies/keyword/&lt;keyword&gt;</span
               >
             </p>
             <div class="request">
               <p>Example</p>
-              <div class="example">/api/v1/resources/movies/keyword/<span class="keyword">cars</span></div>
+              <div class="example">https://retrivedataset.herokuapp.com/api/v1/resources/movies/keyword/<span class="keyword">cars</span></div>
               <p>Output: </p>
               <pre class="example code">
 [
@@ -310,12 +310,12 @@
             <p>
               Fetch by genres <br />
               <span class="endpoints"
-                >/api/v1/resources/movies/genre/&lt;genre&gt;</span
+                >https://retrivedataset.herokuapp.com/api/v1/resources/movies/genre/&lt;genre&gt;</span
               >
             </p>
             <div class="request">
               <p>Example</p>
-              <div class="example">/api/v1/resources/movies/genre/<span class="keyword">science+fiction</span></div>
+              <div class="example">https://retrivedataset.herokuapp.com/api/v1/resources/movies/genre/<span class="keyword">science+fiction</span></div>
               <p>Output: </p>
               <pre class="example code">
 [
@@ -463,12 +463,12 @@
             </div>
           </li>
           <li>
-            <p>Or you can retrieve movies more specific by passing url parameters of "genres", "released year", and "keywords". The order doesn't matter and you must provide at least one of three parameters.<br>
-              <span class="endpoints">/api/v1/resources/movies/search?keywords=''&year=''&genre=''</span>
+            <p>Or you can retrieve movies more specific by passing url parameters of "genres", "released year", and "keywords". The order doesn't matter and you must provide at least one of the three possible parameters.<br>
+              <span class="endpoints">https://retrivedataset.herokuapp.com/api/v1/resources/movies/search?keywords=''&year=''&genre=''</span>
             </p>
             <div class="request">
               <p>Example</p>
-              <div class="example">/api/v1/resources/movies/search <span class="keyword">?genre=crime&keywords=based+on+true+story&year=1990</span></div>
+              <div class="example">https://retrivedataset.herokuapp.com/api/v1/resources/movies/search <span class="keyword">?genre=crime&keywords=based+on+true+story&year=1990</span></div>
               <p>Output: </p>
               <pre class="example code">
 [
